@@ -1,0 +1,5 @@
+<%= link_to "Back to all users", admin_users_path %><br/>
+<h2><%= @user.full_name %></h2>
+<h4><%= @user.email %></h4>
+<h4><%= @user.role %></h4>
+<%= button_to "Switch to user", change_session_path(:id => @user.id),  confirm: "You sure?" %>
